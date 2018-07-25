@@ -19,7 +19,10 @@ jobs:
     steps:
       - checkout
       - run: npm install
-      - run: node server.js
+      - run:
+          name: running server
+          commend: node server.js
+          background: true
       # run tests!
       - run: npm test
 
