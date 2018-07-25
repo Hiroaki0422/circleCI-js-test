@@ -21,7 +21,7 @@ jobs:
       - run: npm install
       - run:
           name: running server
-          commend: node server.js
+          command: node server.js
           background: true
       # run tests!
       - run: npm test
