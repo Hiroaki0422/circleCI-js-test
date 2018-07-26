@@ -6,13 +6,14 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "mysql": "^2.16.0",
     "nodemon": "^1.18.3"
   },
   "devDependencies": {
     "jest": "^23.4.1"
   },
   "scripts": {
-    "test": "jest",
+    "test": "jest --detectOpenHandles",
     "server": "nodemon server.js"
   },
   "repository": {
