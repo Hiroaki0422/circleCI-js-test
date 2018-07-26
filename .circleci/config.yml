@@ -25,6 +25,7 @@ jobs:
     steps:
       - checkout
       - run: npm install
+      - run: sudo apt install mysql-client
       - run:
           name: running server
           command: node server.js
