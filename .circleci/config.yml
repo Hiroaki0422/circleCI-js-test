@@ -30,6 +30,7 @@ jobs:
           command: node server.js
           background: true
       # run tests!
+      - run: mysql -u root < test.sql
       - run: npm test
 
 
